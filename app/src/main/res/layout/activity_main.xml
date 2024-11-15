@@ -8,13 +8,64 @@
     android:background="@color/bg_dark_theme"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_dark_theme"
+        android:orientation="vertical">
+
+        <Button
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/addition"
+            app:cornerRadius="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:backgroundTint="#F47B7B"
+            android:textSize="20sp"
+            />
+        <Button
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/subtraction"
+            app:cornerRadius="0dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:backgroundTint="#3E9239"
+            android:textSize="20sp"
+            />
+        <Button
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/multiplication"
+            app:cornerRadius="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:backgroundTint="#629FFB"
+            android:textSize="20sp"
+            />
+        <Button
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/division"
+            app:cornerRadius="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:backgroundTint="#BF67F4"
+            android:textSize="20sp"
+            />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
