@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="addition">Addition</string>
+    <string name="subtraction">Minus</string>
+    <string name="multiplication">Multiplikation</string>
+    <string name="division">Division</string>
+</resources>
