@@ -10,4 +10,6 @@
     <string name="loading">Loading...</string>
     <string name="math_type">Math Type</string>
     <string name="calculate_the_following">Calculate the following:</string>
+    <string name="correct_0">Correct: 0</string>
+    <string name="incorrect_0">Incorrect: 0</string>
 </resources>
