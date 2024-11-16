@@ -27,18 +27,22 @@ class MainActivity : AppCompatActivity() {
         binding.btnAddition.setOnClickListener {
             val newIntent = Intent(this, MathActivity::class.java)
             newIntent.putExtra("operation", "addition")
+            startActivity(newIntent)
         }
         binding.btnSubtraction.setOnClickListener {
             val newIntent = Intent(this, MathActivity::class.java)
             newIntent.putExtra("operation", "subtraction")
+            startActivity(newIntent)
         }
         binding.btnMultiplication.setOnClickListener {
             val newIntent = Intent(this, MathActivity::class.java)
             newIntent.putExtra("operation", "multiplication")
+            startActivity(newIntent)
         }
         binding.btnDivision.setOnClickListener {
             val newIntent = Intent(this, MathActivity::class.java)
             newIntent.putExtra("operation", "division")
+            startActivity(newIntent)
         }
 
     }
