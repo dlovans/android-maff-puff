@@ -5,6 +5,91 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/bg_dark_theme"
     tools:context=".MathActivity">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/math_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        app:strokeColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginHorizontal="@dimen/spacing_md"
+        android:layout_marginTop="@dimen/spacing_lg">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/loading"
+            android:gravity="center"
+            android:textColor="@color/zinc"
+            android:textSize="20sp"
+            android:padding="@dimen/spacing_lg"
+            />
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:outlineProvider="none"
+        android:layout_marginTop="@dimen/spacing_lg"
+        app:layout_constraintTop_toBottomOf="@+id/math_info"
+        android:layout_marginHorizontal="@dimen/spacing_md"
+        android:layout_marginBottom="@dimen/spacing_md"
+        >
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_dark_theme"
+        android:orientation="vertical">
+            <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_answer"
+            app:boxStrokeColor="@color/white"
+            app:hintTextColor="@color/white"
+            android:layout_marginBottom="@dimen/spacing_md">
+
+                <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/submit_answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/submit"
+            android:backgroundTint="@color/black"
+            android:textSize="20sp"
+            app:cornerRadius="10dp"
+            android:layout_marginBottom="@dimen/spacing_md"
+            android:insetBottom="0dp"/>
+
+        <Button
+            android:id="@+id/change_math"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/change_math"
+            android:backgroundTint="#1CFF30"
+            android:textSize="20sp"
+            android:layout_marginBottom="@dimen/spacing_md"
+            android:textColor="@color/black"
+            app:cornerRadius="10dp"
+            android:insetBottom="0dp"/>
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,4 +3,5 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="bg_dark_theme">#282828</color>
+    <color name="zinc">#D7D7D7</color>
 </resources>

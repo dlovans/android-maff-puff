@@ -4,4 +4,10 @@
     <string name="subtraction">Subtraction</string>
     <string name="multiplication">Multiplication</string>
     <string name="division">Division</string>
+    <string name="enter_answer">Enter answer</string>
+    <string name="submit">Submit</string>
+    <string name="change_math">Change Math</string>
+    <string name="loading">Loading...</string>
+    <string name="math_type">Math Type</string>
+    <string name="calculate_the_following">Calculate the following:</string>
 </resources>
